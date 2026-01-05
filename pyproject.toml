@@ -1,9 +1,10 @@
 [project]
-name = "mlops2025-sandy-chloe"
+name = "ml-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "End-to-end MLOps project"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
+
 dependencies = [
     "pandas",
     "numpy",
@@ -13,3 +14,7 @@ dependencies = [
     "pyarrow>=22.0.0",
     "joblib>=1.5.3",
 ]
+
+[project.scripts]
+train = "scripts.train:main"
+inference = "scripts.batch_inference:main"

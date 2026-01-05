@@ -52,3 +52,6 @@ Desktop.inidata/processed/
 data/processed/
 outputs/
 *Zone.Identifier
+# Allow small useful outputs
+!data/processed/model_report.txt
+!data/processed/metrics.json
