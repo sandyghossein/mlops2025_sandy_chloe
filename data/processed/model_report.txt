@@ -1,0 +1,21 @@
+Model Training Report
+============================================================
+
+Best Model: GradientBoosting
+Validation RMSE: 396.82
+Validation MAE: 263.16
+
+All Models:
+------------------------------------------------------------
+
+RandomForest:
+  Train RMSE: 351.36
+  Val RMSE: 402.72
+  Train MAE: 240.55
+  Val MAE: 266.14
+
+GradientBoosting:
+  Train RMSE: 393.72
+  Val RMSE: 396.82
+  Train MAE: 262.63
+  Val MAE: 263.16

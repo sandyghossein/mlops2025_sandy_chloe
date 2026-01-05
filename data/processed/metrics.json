@@ -1,0 +1,17 @@
+{
+  "best_model": "GradientBoosting",
+  "models": {
+    "RandomForest": {
+      "train_rmse": 351.3609950106697,
+      "val_rmse": 402.72492294613403,
+      "train_mae": 240.55351907778308,
+      "val_mae": 266.1386322025617
+    },
+    "GradientBoosting": {
+      "train_rmse": 393.72387295063817,
+      "val_rmse": 396.82033130258276,
+      "train_mae": 262.630007383922,
+      "val_mae": 263.15905684253903
+    }
+  }
+}
