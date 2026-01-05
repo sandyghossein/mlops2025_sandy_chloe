@@ -4,8 +4,11 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pandas",
+dependencies = [
+    "pandas",
     "numpy",
     "scikit-learn",
     "matplotlib",
-    "seaborn",]
+    "seaborn",
+    "pyarrow>=22.0.0",
+]

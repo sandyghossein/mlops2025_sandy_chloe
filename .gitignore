@@ -47,3 +47,8 @@ build/
 # Windows 
 Thumbs.db
 Desktop.inidata/processed/
+
+# Generated artifacts (do not commit)
+data/processed/
+outputs/
+*Zone.Identifier
