@@ -44,6 +44,6 @@ build/
 # AWS credentials
 .aws/
 
-# Windows (since you're on WSL/Windows)
+# Windows 
 Thumbs.db
-Desktop.ini
+Desktop.inidata/processed/
