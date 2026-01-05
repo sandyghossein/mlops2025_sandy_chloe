@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: ml-project-app
+    volumes:
+      - ./:/app  # Mount local code for live updates
+    command: ["uv", "run", "train"]  # Default command
+    environment:
+      - PYTHONPATH=/app/src
+
+  mlflow:
+    image: mlflow/mlflow:2.8.0
+    container_name: mlflow-server
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlflow/mlruns
+    environment:
+      - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
