@@ -262,6 +262,7 @@ name = "mlops2025-sandy-chloe"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "joblib" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
@@ -272,6 +273,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "joblib", specifier = ">=1.5.3" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
