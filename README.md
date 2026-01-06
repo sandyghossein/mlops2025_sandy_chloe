@@ -11,16 +11,19 @@ This project implements a complete end-to-end machine learning pipeline to predi
 ```
 mlops2025_sandy_chloe/
 ├── src/
-│   └── mlproject/              # Main Python package
-│       ├── preprocess/          # Data cleaning and preprocessing
+│   └── mlproject/
+│       ├── preprocess/
 │       │   └── clean.py
-│       ├── features/            # Feature engineering
+│       ├── features/
 │       │   └── transformers.py
-│       ├── train/               # Model training logic
+│       ├── train/
 │       │   └── models.py
-│       └── inference/           # Batch inference
-│           └── predict.py
-│
+│       ├── inference/
+│       │   └── predict.py
+│       └── pipelines/                
+│           ├── run_training_pipeline.py
+│           └── run_batch_inference_pipeline.py
+│   
 ├── scripts/                     # Entry point scripts
 │   ├── preprocess.py           # Preprocessing script
 │   ├── feature_engineering.py  # Feature engineering script
