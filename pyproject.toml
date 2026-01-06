@@ -18,3 +18,14 @@ dependencies = [
 [project.scripts]
 train = "scripts.train:main"
 inference = "scripts.batch_inference:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mlproject", "scripts"]

@@ -4,11 +4,13 @@ services:
   app:
     build: .
     container_name: ml-project-app
+    working_dir: /app
     volumes:
-      - ./:/app  # Mount local code for live updates
-    command: ["uv", "run", "train"]  # Default command
+      - ./:/app
     environment:
       - PYTHONPATH=/app/src
+    entrypoint: ["uv", "run"]
+    command: ["train"]
 
   mlflow:
     image: mlflow/mlflow:2.8.0
